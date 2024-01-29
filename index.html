@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News homepage</title>
+    <link rel="icon" href="assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="layout">
+        <header class="header">
+            <div class="header__wrapper">
+                <img class="header__logo" src="/assets/images/logo.svg" alt="Logo">
+                <button class="header__menu-btn header__menu-btn--inactive">
+                    <img class="header__menu-btn-icon" src="/assets/images/icon-menu.svg" alt="Menu icon">
+                </button>
+                <div class="header__menu">
+                    <nav class="header__links header__links--small">
+                        <button class="header__menu-btn header__menu-btn--active">
+                            <img class="header__menu-btn-icon" src="/assets/images/icon-menu-close.svg"
+                                alt="Menu icon close">
+                        </button>
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <a class="header__list-link" href="#Home">Home</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a class="header__list-link" href="#New">New</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a class="header__list-link" href="#Popular">Popular</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a class="header__list-link" href="#Trending">Trending</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a class="header__list-link" href="#Categories">Categories</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <nav class="header__links header__links--large">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#Home">Home</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#New">New</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#Popular">Popular</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#Trending">Trending</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#Categories">Categories</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__top-container">
+                <img class="main__top-img main__top-img--small" src="/assets/images/image-web-3-mobile.jpg"
+                    alt="Top image">
+                <img class="main__top-img main__top-img--large" src="/assets/images/image-web-3-desktop.jpg"
+                    alt="Top image">
+                <h1 class="main__top-title">The Bright Future of Web 3.0?</h1>
+                <p class="main__top-paragraph">We dive into the next evolution of the web that claims to put the power
+                    of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                <button class="main__btn">Read more</button>
+            </section>
+
+            <aside class="aside">
+                <h2 class="aside__title">New</h2>
+
+                <article class="aside__article">
+                    <h3 class="aside__subtitle">New Hydrogen VS Electric Cars</h3>
+                    <p class="aside__subtitle-paragraph">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </article>
+                <hr class="aside__line">
+
+                <article class="aside__article">
+                    <h3 class="aside__subtitle">The Downsides of AI Artistry</h3>
+                    <p class="aside__subtitle-paragraph">What are the possible adverse effects of on-demand AI image
+                        generation?</p>
+                </article>
+                <hr class="aside__line">
+
+                <article class="aside__article">
+                    <h3 class="aside__subtitle">Is VC Funding Drying Up?</h3>
+                    <p class="aside__subtitle-paragraph">Private funding by VC firms is down 50% YOY. We take a look at
+                        what that means.</p>
+                </article>
+            </aside>
+
+            <div class="container">
+                <article class="article">
+                    <img class="article__img" src="/assets/images/image-retro-pcs.jpg" alt="Retro PC">
+                    <div class="article__text-container">
+                        <span class="article__number">01</span>
+                        <h3 class="article__title">Reviving Retro PCs</h3>
+                        <p class="article__paragraph">What happens when old PCs are given modern upgrades?</p>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <img class="article__img" src="/assets/images/image-top-laptops.jpg" alt="Laptop keyboard">
+                    <div class="article__text-container">
+                        <span class="article__number">02</span>
+                        <h3 class="article__title">Top 10 Laptops of 2022</h3>
+                        <p class="article__paragraph">Our best picks for various needs and budgets.</p>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <img class="article__img" src="/assets/images/image-gaming-growth.jpg" alt="Game joystick">
+                    <div class="article__text-container">
+                        <span class="article__number">03</span>
+                        <h3 class="article__title">The Growth of Gaming</h3>
+                        <p class="article__paragraph">How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="footer__paragraph">Challenge by Frontend Mentor. Coded by
+                <a class="footer__link" href="https://www.frontendmentor.io/profile/agneja00"
+                    target="_blank">Agnieska</a>
+                .
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

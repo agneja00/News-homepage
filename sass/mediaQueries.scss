@@ -1,0 +1,93 @@
+@import "variables.scss";
+
+@media only screen and (min-width: 1440px) {
+    .layout {
+        grid-template-columns: 7.5rem 1fr 1fr 25rem 7.5rem;
+        grid-template-areas:
+            ". header header header ."
+            ". main main main ."
+            ". footer footer footer .";
+    }
+
+    .header {
+        &__wrapper {
+            padding: 3rem 0;
+        }
+
+        &__menu {
+
+            &-btn {
+                display: $no-display;
+            }
+        }
+
+        &__links {
+            display: flex;
+            justify-content: $element-center;
+        }
+
+        &__list {
+            flex-direction: row;
+            align-items: $element-center;
+            gap: 2.5rem;
+
+            &-link {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .main {
+        column-gap: 2rem;
+        row-gap: 5rem;
+
+        &__top {
+            &-container {
+                grid-column: 1 / 3;
+                row-gap: 1.5rem;
+            }
+
+            &-img {
+                grid-column: 1 / 3;
+
+                &--small {
+                    display: $no-display;
+                }
+
+                &--large {
+                    display: inline;
+                }
+            }
+
+            &-title {
+                grid-row: 2 / 4;
+            }
+
+            &-paragraph {
+                line-height: 1.5rem;
+            }
+        }
+
+        &__btn {
+            padding: 0;
+        }
+    }
+
+    .aside {
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+
+    .container {
+        grid-template-columns: 1fr 26.7rem 24.5rem;
+        grid-column: 1 / 4;
+        gap: 2rem;
+    }
+
+    .footer {
+        &__paragraph {
+            padding: 3rem 0;
+        }
+    }
+}

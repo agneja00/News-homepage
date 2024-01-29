@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: $primary-font;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    grid-template-areas: 
+    ". header ."
+    ". main ."
+    ". footer .";
+  }
+
+  @import "header.scss";
+  @import "main.scss";
+  @import "footer.scss";
+  @import "mediaQueries.scss";

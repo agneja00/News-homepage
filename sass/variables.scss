@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "InterRegular";
+    src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "InterBold";
+    src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "InterExtraBold";
+    src: url("assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
+}
+
+$primary-font: 'InterRegular', sans-serif;
+$heading-font: 'InterBold', sans-serif;
+$heading-extra-bold-font: 'InterExtraBold', sans-serif;
+$primary-color: hsl(236, 13%, 42%);
+$secondary-color: hsl(5, 85%, 63%);
+$tertiary-color: hsl(233, 8%, 79%);
+$background-color: hsl(240, 100%, 5%);
+$no-display: none;
+$element-center: center;
+
+@mixin small-display-grid {
+    display: grid;
+    gap: 1rem;
+}

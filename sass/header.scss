@@ -1,0 +1,101 @@
+@import "variables.scss";
+
+.header {
+    grid-area: header;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 0;
+    }
+
+    &__menu {
+        display: $no-display;
+
+        &.active {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: open-menu .3s forwards ease-out;
+        }
+
+        &-btn {
+            background-color: hsl(36, 100%, 99%);
+            border: $no-display;
+            cursor: pointer;
+
+            &--inactive {
+                &.active {
+                    display: $no-display;
+                }
+            }
+
+            &--active {
+                display: $no-display;
+
+                &.active {
+                    display: inline-block;
+                    text-align: end;
+                }
+            }
+        }
+    }
+
+    @keyframes open-menu {
+        0% {
+            transform: translate(100%);
+            background-color: hsl(240, 100%, 5%);
+        }
+
+        100% {
+            background-color: hsla(0, 0%, 0%, 0.502);
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+
+        &--small {
+            position: absolute;
+            right: 0;
+            width: 16rem;
+            height: 100%;
+            padding: 2rem 1.5rem;
+            background-color: hsl(36, 100%, 99%);
+        }
+
+        &--large {
+            display: $no-display;
+        }
+    }
+
+    &__list {
+        list-style: $no-display;
+        height: 50%;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: $element-center;
+        gap: 1.5rem;
+
+        &-item {
+            &:hover {
+                color: $secondary-color;
+                cursor: pointer;
+            }
+        }
+
+        &-link {
+            color: hsl(0, 0%, 0%);
+            text-decoration: $no-display;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
