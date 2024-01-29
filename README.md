@@ -21,6 +21,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
+- BEM methodology
 - CSS custom properties
 - SASS
 - Flexbox
